@@ -1,0 +1,28 @@
+@mixin imgMiddle
+  text-align: center
+  img
+    display: inline-block
+    vertical-align: middle
+@mixin center
+  position: absolute
+  left: 0
+  right: 0
+  margin: auto
+@mixin pagination
+  width: .64rem
+  height: .12rem
+  position: absolute
+  left: 0
+  right: 0
+  margin: auto
+  display: flex
+  justify-content: space-around
+  z-index: 9
+  div
+    width: .09rem
+    height: .09rem
+    border-radius: 50%
+    border: 1px solid #353535
+    cursor: pointer
+  .pagination
+    border-color: #28d9ca

@@ -1,0 +1,389 @@
+@import '../common/css/min_mixin'
+#app
+  overflow: hidden
+.linkListTop
+  display: none
+.min-top
+  width: 100%
+  height: 1.28rem
+  float: left
+#header
+  width: 100%
+  height: 3.28rem
+  float: left
+  overflow: hidden
+  background: url(../static/img/headerBk-min.jpg) no-repeat
+  background-size: 100% 100%
+  .logo
+    display: none
+  .buttonBox
+    height: 100%
+    div
+      height: 100%
+      overflow: hidden
+      position: relative
+    p
+      font-size: .3rem
+      letter-spacing: .15rem
+      padding-left: .15rem
+      font-weight: bold
+      color: #1e1f21
+      line-height: .47rem
+      text-align: center
+      top: .68rem
+      @include center
+    button
+      width: 1.87rem
+      height: .4rem
+      border-radius: .08rem
+      border: 1px solid #c0c0c0
+      background: #30e2d6
+      color: #ffffff
+      font-size: .24rem
+      font-weight: bold
+      letter-spacing: .04rem
+      top: 2.13rem
+      @include center
+.linkListBottom
+  display: none
+#body
+  width: 100%
+  float: left
+  overflow: hidden
+  .title
+    font-size: .24rem
+    color: #333
+    padding: 0 .57rem
+    line-height: .36rem
+    span
+      font-size: .28rem
+      font-weight: bold
+      color: #28d9ca
+      letter-spacing: .04rem
+      line-height: .5rem
+  .introduceBox
+    height: 5.4rem
+    overflow: hidden
+    box-sizing: border-box
+    padding-top: .3rem
+    position: relative
+    .introduceWall
+      width: 100%
+      height: 3.1rem
+      @include center
+      top: 1.8rem
+      .introduce-swiper-container
+        width: 100%
+        height: 100%
+        padding-bottom: .2rem
+        .introduce-swiper-wrapper
+          .introduce-swiper-slide
+            width: 54.667%
+            background: #f9f9f9
+            box-shadow: 0 .06rem .1rem rgba(0, 0, 0, .3)
+            font-size: .21em
+            color: #333
+            box-sizing: border-box
+            border-radius: 16px
+            padding: 0 .24rem
+            overflow: hidden
+            div
+              height: 1.16rem
+              line-height: 1.16rem
+              position: relative
+              @include imgMiddle
+              transform: scale(.7,.7)
+              img
+                height: 100%
+            > img
+              position: absolute
+            .introduceBk1
+              width: .36rem
+              right: 0
+              bottom: 0
+            .introduceBk2
+              width: .96rem
+              right: 0
+              top: 30%
+            .introduceBk3
+              width: .52rem
+              right: 0
+              left: 0
+              bottom: 10%
+              margin: auto
+            p
+              font-size: .22rem
+              font-weight: 500
+              color: #333
+              line-height: .34rem
+              padding-top: .15rem
+    .introduce-pagination-block
+      bottom: .02rem
+      @include pagination
+.featureBox
+  width: 100%
+  height: 4.8rem
+  box-sizing: border-box
+  padding-top: 1rem
+  background: url(../static/img/pic2.jpg) #fff bottom no-repeat
+  background-size: 100% 100%
+  background-origin: content-box
+  position: relative
+  .title
+    position: absolute
+    top: .42rem
+    left: 0
+  ul
+    width: 88%
+    height: .9rem
+    margin: .4rem auto .8rem auto
+    display: flex
+    justify-content: space-around
+    li
+      width: 1rem
+      height: 1.2rem
+      text-align: center
+      position: relative
+      svg
+        position: absolute
+      .on-line
+        width: 1.01rem
+        height: .935rem
+        top: -.24rem
+        left: .1rem
+      .review
+        width: .78rem
+        height: .786rem
+        top: 0
+        left: .14rem
+      .test
+        width: .8rem
+        height: .7695rem
+        top: 0
+        left: .14rem
+      .system
+        width: .83rem
+        height: .84818rem
+        top: -.08rem
+        left: .15rem
+      .promote
+        width: .77rem
+        height: .71rem
+        top: 0
+        left: .13rem
+      .summarize
+        width: .81rem
+        height: .81rem
+        top: -.12rem
+        left: .1rem
+      p
+        font-weight: 500
+        font-size: .22rem
+        color: #333
+        @include center
+        bottom: 0
+  svg
+    display: block
+  path, polyline, polygon
+    fill: transparent
+    stroke: #333
+    stroke-width: 4px
+  line
+    stroke: #333
+    stroke-width: 4px
+  circle
+    stroke: #333
+    stroke-width: 4px
+  .on-line
+  .on-line .book line
+    stroke-width: 5px
+  .on-line .sign path
+    stroke-width: 1px
+  .fill
+    fill: #333
+    stroke-width: 0
+.bookBox
+  width: 100%
+  height: 12.3rem
+  box-sizing: border-box
+  padding-top: .35rem
+  position: relative
+  .maxBook
+    display: none
+  .minBook
+    height: 10.9rem
+    background: url(../static/img/pic3.jpg) #fff bottom no-repeat
+    background-size: 100% 100%
+    box-shadow: 0 0 .3rem rgba(0,0,0,.2)
+    @include center
+    bottom: 0
+    font-size: .22rem
+    color: #4d4d4d
+    letter-spacing: .04rem
+    ul
+      margin-top: .1rem
+      width: 100%
+      box-sizing: border-box
+      padding: 0 .57rem
+      li
+        margin-bottom: .45rem
+        overflow: hidden
+        div
+          float: left
+          &:first-child
+            width: 1.2rem
+            box-sizing: border-box
+            padding-top: .15rem
+          &:last-child
+            line-height: .35rem
+.evaluateBox
+  height: 5.91rem
+  box-sizing: border-box
+  padding-top: .55rem
+  position: relative
+  .title
+    text-align: center
+    position: relative
+    &:before
+      content: ''
+      width: .82rem
+      height: 1px
+      position: absolute
+      left: 1.29rem
+      top: 0
+      bottom: 0
+      margin: auto
+      background: linear-gradient(90deg,hsla(0,0%,100%,0),#999)
+    &:after
+      content: ''
+      width: .82rem
+      height: 1px
+      position: absolute
+      right: 1.29rem
+      top: 0
+      bottom: 0
+      margin: auto
+      background: linear-gradient(90deg,#999,hsla(0,0%,100%,0))
+  .evaluate-swiper-container
+    width: 6.16rem
+    height: 3.8rem
+    font-size: .22rem
+    color: #4d4d4d
+    margin-top: .4rem
+    .evaluate-swiper-wrapper
+      .evaluate-swiper-slide
+        .userBlock
+          width: 100%
+          height: 100%
+          margin: 0 auto
+          .evaluateText
+            text-align: center
+            line-height: .3rem
+          .userBox
+            text-align: center
+            position: absolute
+            bottom: .1rem
+            left: 0
+            right: 0
+            margin: auto
+            .userName
+            .userClass
+            img
+              width: .69rem
+  .evaluate-pagination-block
+    @include pagination
+    width: .9rem
+    bottom: .6rem
+.swiper-button-next, .swiper-button-prev
+  width: .13rem !important
+  height: .27rem !important
+  background-size: .13rem .27rem !important
+  top: 3.05rem !important
+.generalizeBox
+  width: 100%
+  height: 4.05rem
+  background: url(../static/img/pic1-min.jpg) center no-repeat
+  background-size: 100% 100%
+  text-align: center
+  color: #28d9ca
+  font-weight: bold
+  font-family: 'SimHei'
+  position: relative
+  .generalizeTitle
+    font-size: .275rem
+    line-height: 1em
+    @include center
+    top: .81rem
+  .generalizePrice
+    font-size: .365rem
+    @include center
+    top: 1.4rem
+    line-height: 1em
+    font-family: 'Microsoft YaHei'
+    span
+      font-family: 'SimHei'
+      font-size: .86rem
+  .originalPrice
+    font-size: .223rem
+    line-height: 1em
+    top: 2.45rem
+    @include center
+    i
+      font-size: .245rem
+      font-style: italic
+  button
+    width: 2.92rem
+    height: .5rem
+    background: #28d9ca
+    border-radius: .08rem
+    font-size: .22rem
+    line-height: 1em
+    color: #fff
+    @include center
+    top: 3.28rem
+    letter-spacing: .12rem
+    &:hover
+      background: #30e2d6
+  svg
+    width: 3.182rem
+    height: 2.901rem
+    top: .1rem
+    @include center
+    ellipse
+      fill: transparent
+      stroke-width: 1px
+      stroke: #2ad9ca
+    circle
+      fill: #2ad9ca
+.bottomBox
+  display: none
+.scanQRcode
+  > div
+    width: 2.7rem
+    height: 2.7rem
+    background: url(../static/img/QRcodeBk.png) no-repeat
+    background-size: 100% 100%
+    top: 0
+    bottom: 0
+    @include center
+    img
+      width: 1.1rem
+      height: 1.1rem
+      top: .47rem
+      @include center
+    p
+      font-size: .23rem
+      text-align: center
+      margin-top: 1.75rem
+      letter-spacing: .05rem
+      line-height: .26rem
+.el-dialog
+  border-radius: .2rem !important
+  box-shadow: none !important
+  margin-top: auto !important
+.el-dialog__header
+  padding: 0px !important
+.el-dialog__body
+  padding: 0px !important
+  color: #333 !important
+
